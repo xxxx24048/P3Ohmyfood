@@ -1,0 +1,38 @@
+$primary-color: #9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color: #99E2D0;
+$color-icon: rgb(133, 133, 133);
+$font: 'roboto';
+
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    border: 0;
+}
+
+a, li {
+  text-decoration: none;
+}
+
+button{
+  background-color: transparent;
+}
+
+
+@mixin Pink-button {
+    background: $secondary-color;
+    background: linear-gradient(178deg, $secondary-color 0%, $primary-color 87%);
+    width: 217px;
+    height: 52px;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    color: white;
+    font-family: "Roboto";
+  }
+
+@mixin hover-button {
+    cursor: pointer;
+    background-color: lighten($color: $primary-color, $amount: 35%);
+    box-shadow: 0px 10px 10px 0px lighten($color: $color-icon, $amount: 25%);
+  }
+
