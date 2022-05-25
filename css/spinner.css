@@ -7,17 +7,13 @@
     height: 100%;
     z-index: 1000;
 	background-color:#f5edff;
-    
-   
-
+    pointer-events: none;
 }
 
 #loader 
 {
-	 
 	animation-delay: -2s; /*pour démarrer tout de suite, comme si il était à la situation au bout de 2 secondes */
-	 
-    display: block;
+	display: block;
     position: relative;
     left: 50%;
     top: 50%;
@@ -27,19 +23,12 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #9356DC;
-    
     -webkit-animation: spinner 3s linear 1;
-    
     animation: spinner 3s linear 1;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */
-    
-   
-    
-    
 }
  
 #loader:before 
-{
-    content: "";
+{   content: "";
     position: absolute;
     top: 5px;
     left: 5px;
@@ -48,12 +37,8 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #FF79DA;
-     
-	-webkit-animation: spinner 1.5s linear 2;
-    
-	animation: spinner 1.5s linear 2;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */
-    
-
+    -webkit-animation: spinner 1.5s linear 2;
+    animation: spinner 1.5s linear 2;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */
 }
  
 #loader:after 
@@ -67,9 +52,7 @@
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #99E2D0;
-    
-	-webkit-animation: spinner 1s linear 3;
-        
+	-webkit-animation: spinner 1s linear 3;  
 	animation: spinner 1s linear 3;/* animation: [animation-name] [animation-duration] [animation-timing-function] [animation-iteration-count]; */
     
     
