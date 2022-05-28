@@ -61,6 +61,44 @@ button {
   padding: 1rem 2rem 0 1rem;
 }
 
+.heart-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.heart-btn i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  font-size: 22px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  color: #7e7e7e;
+  background-color: #f2f2f2;
+}
+
+.heart-btn:hover i {
+  opacity: 0;
+}
+
+.heart-btn:hover .on-hover {
+  opacity: 1;
+}
+
+.heart-btn .on-hover {
+  opacity: 1;
+  background-color: #f2f2f2;
+  mix-blend-mode: lighten;
+}
+
 .liste {
   padding: 1rem;
 }
@@ -191,9 +229,21 @@ button {
           transition-duration: 0.5s;
 }
 
-.liste__bouton {
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: 30%;
+  height: 150px;
+}
+
+.menu__btn > button {
   background: #FF79DA;
   background: linear-gradient(178deg, #FF79DA 0%, #9356DC 87%);
   width: 217px;
@@ -202,15 +252,15 @@ button {
   border-radius: 50px 50px 50px 50px;
   color: white;
   font-family: "Roboto";
-  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
-.liste__bouton:hover {
+.menu__btn :hover {
   cursor: pointer;
   background-color: #f2eafb;
   -webkit-box-shadow: 0px 10px 10px 0px #c5c5c5;
           box-shadow: 0px 10px 10px 0px #c5c5c5;
+  -webkit-filter: sepia(20%);
+          filter: sepia(20%);
 }
 
 @-webkit-keyframes rotate {
@@ -364,7 +414,7 @@ button {
           align-items: center;
 }
 
-.search__imput {
+.search__input {
   background-color: transparent;
   color: #3a3a3a;
   border: none;
@@ -388,7 +438,7 @@ button {
           align-items: center;
   padding: 40px;
   text-align: center;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 .intro__title {
@@ -455,7 +505,7 @@ button {
 }
 
 .step:hover {
-  background-color: white;
+  background-color: #e4d5f6;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
           box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
 }
@@ -492,9 +542,8 @@ button {
 
 .step__text {
   margin: 2px 0 0 20px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: "roboto";
-  font-style: bold;
 }
 
 .restau {
@@ -545,6 +594,7 @@ cards {
   background-color: #99E2D0;
   color: #1b6150;
   border-radius: 5px 5px 5px 5px;
+  font-family: 'roboto';
 }
 
 .card__info {
@@ -594,7 +644,8 @@ cards {
   padding: 1px;
   font-size: 22px;
   -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   color: #7e7e7e;
   background-color: white;
 }
