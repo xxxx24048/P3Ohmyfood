@@ -75,7 +75,7 @@
     color: black;
     font-size: larger;
     font-weight: bold;
-    font-family: $font;
+    font-family: 'roboto';
   }
 
   &__subtitle {
@@ -207,13 +207,13 @@ cards {
 
     &__h3 {
       margin: 10px 0 0 0;
-      font-family: $font;
+      font-family: 'roboto';
       color: #3a3a3a;
     }
 
     &__loc {
       margin: 5px 0;
-      font-family: $font;
+      font-family: 'roboto';
       color: #3a3a3a;
     }
   }

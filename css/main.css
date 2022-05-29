@@ -107,7 +107,7 @@ button {
   text-transform: uppercase;
   position: relative;
   padding: 0 0 0.5rem 0;
-  font-family: "roboto";
+  font-family: 'Roboto';
   font-weight: normal;
 }
 
@@ -154,7 +154,7 @@ button {
 }
 
 .liste__texte {
-  font-family: "roboto";
+  font-family: 'roboto';
   white-space: nowrap;
   overflow: hidden;
   -webkit-box-flex: 1;
@@ -186,7 +186,7 @@ button {
           align-items: flex-end;
   padding-right: 30px;
   padding-top: 30px;
-  font-family: "roboto";
+  font-family: 'roboto';
   font-weight: bolder;
 }
 
@@ -447,7 +447,7 @@ button {
   color: black;
   font-size: larger;
   font-weight: bold;
-  font-family: "roboto";
+  font-family: 'roboto';
 }
 
 .intro__subtitle {
@@ -616,13 +616,13 @@ cards {
 
 .card__info__h3 {
   margin: 10px 0 0 0;
-  font-family: "roboto";
+  font-family: 'roboto';
   color: #3a3a3a;
 }
 
 .card__info__loc {
   margin: 5px 0;
-  font-family: "roboto";
+  font-family: 'roboto';
   color: #3a3a3a;
 }
 
